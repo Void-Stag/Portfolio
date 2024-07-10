@@ -1,0 +1,224 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+body {
+    background: #fcc;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Section CSS */
+section {
+    display: grid;
+    padding: 1em;
+    min-height: 10em;
+    min-width: 5em;
+    height: fit-content;
+    justify-content: center;
+    gap: 0.1em;
+}
+
+
+.languages,
+.key-tools {
+    padding: 0.5em 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 20em;
+}
+
+/* Heading Section CSS */
+.intro {
+    display: grid;
+    background-color: #fff;
+}
+
+
+.prog-lang, .skill-title {
+    min-height: 3em;
+}
+
+
+/* Text Styles */
+
+h2.intro,
+h3 {
+    display: inline-flex;
+    word-wrap: break-word;
+}
+
+
+/* Project Card CSS */
+.project-card {
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 10em;
+    height: fit-content;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    text-align: center;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1em;
+}
+
+/* Image CSS */
+.profile-photo {
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Content divs */
+.self-photo {
+    padding: 1em;
+    height: fit-content;
+}
+
+.small-self-intro {
+    padding: 0.5em;
+}
+
+.page-intro {
+    padding: 2em;
+    max-width: max-content;
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+
+    body {
+        background: #cfc;
+    }
+
+
+    .intro {
+        display: flex;
+    }
+
+
+    /* Project  & Game Card CSS */
+    .project-card {
+        padding: 2em;
+        width: 8em;
+        height: fit-content;
+        background-color: whitesmoke;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    }
+
+    .project-card a {
+        text-decoration: none;
+        color: black;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* Image CSS */
+    .profile-photo {
+        border-radius: 8px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+    /* applies to screens wider than 999px */
+
+    body {
+        background: #ccf;
+    }
+
+    .small-intro {
+        padding: 0.5em;
+        width: 25%;
+    }
+
+    .project-card:hover {
+        transform: scale(1.1);
+        transition: 1s ease-out;
+        height: auto;
+    }
+
+}
+
+/* Media Theme Detecting CSS*/
+@media (prefers-color-scheme: dark) {
+    /* Section CSS */
+    /*
+    .intro {
+        background-color: #0D1B2A;
+    }
+
+    .key-skills,
+    .skill-heading {
+        background-color: #0D1B2A;
+    }
+
+    .tool-heading,
+    .key-tools {
+        background-color: #1B263B;
+    }
+
+    .current-projects,
+    .project-heading,
+    .more-projects {
+        background-color: #1B263B;
+    }
+
+    /* Product Card */
+    /* .project-card {
+        background-color: #5F6472;
+    }
+
+    .skill-card {
+        background-color: #353753;
+    } */
+}
+
+@media (prefers-color-scheme: light) {
+
+    /* Section CSS */
+
+    .intro {
+        background-color: #8199C5;
+    }
+
+    .key-skills,
+    .skill-heading {
+        background-color: #8199C5;
+    }
+
+    .tool-heading,
+    .key-tools {
+        background-color: #E0E1DD;
+    }
+
+    .current-projects,
+    .project-heading,
+    .more-projects {
+        background-color: #E0E1DD;
+    }
+
+
+}

@@ -1,0 +1,203 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+/* Section CSS */
+section.gaming {
+  display: grid;
+  padding: 1em;
+  min-height: 10em;
+  min-width: 5em;
+  height: fit-content;
+  justify-content: center;
+  gap: 0.1em;
+}
+
+/* Sections */
+.image-background-about {
+  background-image: url(/images/pexels-irina-iriser-lilac.jpg);
+  background-size: cover;
+  /*   height: 10em;
+  width: auto; */
+  /*   background-position: center; */
+  box-shadow: #af929d 0 0 5px 2px inset;
+}
+
+.education-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+/* Text Styles */
+.hobbies h4 {
+  padding-left: 40em;
+  padding-right: 40em;
+  align-items: center;
+  padding: 1em;
+}
+
+.content {
+  padding-top: 0.5em;
+  max-width: 60em;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 0.2em;
+  font-size: large;
+}
+
+
+/* Game Card CSS */
+.game-card {
+  height: auto;
+  width: 10em;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Image CSS */
+.game-photo {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  box-shadow: 0px 0px 5px 3px #6F6F72;
+}
+
+
+
+/* Article CSS */
+article.content {
+  padding: 0.5em;
+  justify-content: center;
+  display: inline-flex;
+  width: fit-content;
+  word-wrap: break-word;
+}
+
+/* Content divs */
+.page-intro {
+  padding: 2em;
+  max-width: max-content;
+}
+
+.hobbies {
+  display: flex;
+  gap: 10em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: normal;
+  width: 20em;
+}
+
+.games {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  padding-top: 1em;
+}
+
+.overlay-card {
+  margin-top: 0.2em;
+  padding: 3em;
+  text-align: center;
+  background-color: #2e5745a7;
+  height: auto;
+  width: 10em;
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+  /* Image Background Section */
+
+  .image-background-about {
+    background-image: url(/images/pexels-irina-iriser-lilac.jpg);
+    background-size: 110em;
+    height: 20em;
+  }
+
+  .overlay-card {
+    margin-top: 2em;
+    padding: 5em;
+    text-align: center;
+    background-color: #2e5745a7;
+    height: max-content;
+    width: 10em;
+  }
+
+}
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+  .hobbies {
+    gap: 40em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: normal;
+    width: 40em;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    transition: 1s ease-out;
+    height: auto;
+  }
+
+
+}
+
+/* Media Theme Detecting CSS*/
+@media (prefers-color-scheme: dark) {
+  /* Section CSS */
+/*
+  .intro {
+    background-color: #0D1B2A;
+  }
+
+  .gaming,
+  .DnD {
+    background-color: #0D1B2A;
+  }
+
+
+  .PC,
+  .education-achievements {
+    background-color: #1B263B;
+  } */
+
+}
+
+@media (prefers-color-scheme: light) {
+
+  /* Section CSS */
+
+  .PC,
+  .education-achievements {
+    background-color: #809D9B;
+  }
+
+
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,250 @@
+/* Font CSS */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&display=swap');
+
+h1 {
+    font-family: Comfortaa;
+    font-weight: 700;
+}
+
+h2{
+    font-family: Comfortaa;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h3,
+h4,
+h5 {
+    font-family: Comfortaa;
+    font-weight: 500;
+}
+
+p,
+figcaption,
+li {
+    font-family: Fredoka;
+    font-weight: 300;
+}
+
+a,
+button {
+    font-family: Comfortaa;
+    font-weight: 400;
+}
+
+figcaption {
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+}
+
+h3,
+h2,
+a,
+h4,
+figcaption {
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    padding-bottom: 0.4em;
+}
+
+
+h3 {
+    word-wrap: break-word;
+    height: fit-content;
+}
+
+a:active,
+a:visited,
+figcaption:active,
+figcaption:visited,
+a,
+figcaption {
+    text-decoration: none;
+}
+
+/* Base HTML elements CSS */
+header,
+nav,
+footer {
+    display: flex;
+    padding: 0.5em;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+header,
+nav {
+    justify-content: right;
+}
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+}
+
+footer {
+    justify-content: center;
+}
+
+.title {
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 3em;
+}
+
+
+/* Navbar CSS */
+/* Responsive Nav Styling */
+nav {
+    padding: 0.7em;
+    height: fit-content;
+}
+
+.res-navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    background-color: rgba(106, 142, 127, 0.9);
+    width: 100%;
+    height: calc(100vh - 58px);
+    padding-top: 60px;
+    gap: 6vh;
+}
+
+.res-navbar>a {
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .4s ease-in;
+}
+
+.res-navbar>a:hover {
+    color: #ccf;
+}
+
+.menu {
+    display: flex;
+}
+
+#closeMenu {
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+
+    /* Font CSS */
+    h3,
+    h2,
+    p,
+    a {
+        margin: 0;
+        /* display: inherit; */
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* Font CSS */
+    a {
+        padding: 1em;
+    }
+
+    /* Revert Responsive Navbar to regular Navbar */
+    .res-navbar {
+        display: inline-flex;
+        width: 100%;
+        height: fit-content;
+        justify-content: right;
+        padding-top: 0;
+        flex-direction: row;
+        padding: 1em;
+        position: static;
+        background-color: inherit;
+    }
+
+    nav {
+        padding: 0.1em;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+
+/* Media Prefer scheme CSS */
+@media (prefers-color-scheme: dark) {
+
+/*     p,
+    h2,
+    h3,
+    h4,
+    h5,
+    a,
+    .res-navbar,
+    figcaption,
+    li {
+        color: #fff;
+    }
+
+    a:active,
+    a:visited {
+        color: rgb(255, 255, 255);
+    }
+ */
+    /* Header & Footer */
+/*     header,
+    nav,
+    footer {
+        background-color: #232A36;
+    } */
+}
+
+@media (prefers-color-scheme: light) {
+
+    header,
+    nav,
+    footer,
+    section {
+        background: #fff;
+    }
+
+    p,
+    h2,
+    h3,
+    h4,
+    a,
+    figcaption {
+        color: #000;
+    }
+
+    a:active,
+    a:visited,
+    a {
+        color: #000;
+    }
+
+    figcaption a,
+    figcaption a:active,
+    figcaption a:visited {
+        color: #000;
+        text-decoration: none;
+    }
+}
